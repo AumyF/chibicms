@@ -4,4 +4,5 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [honox(), tailwindcss()],
+  ssr: { external: ["@djot/djot", "sanitize-html"] },
 });
